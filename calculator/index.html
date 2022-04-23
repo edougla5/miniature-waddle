@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel = 'stylesheet' href = 'styles.css'></link>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Qahiri&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id = 'container'>
+        <div id = 'display'>
+            <span id = 'innerText'>0</span>
+        </div>
+         <!-- in these button elements there are 2 types. operators modify the numtot variable and 
+            numbers are used by operators -->
+        <button id = 'ac' onclick = 'operator("ac")'>ac</button>
+        <button id = 'zero' onclick='number(0)'>0</button>
+        <button id = 'one' onclick='number(1)'>1</button>
+        <button id = 'two' onclick='number(2)'>2</button>
+        <button id = 'three' onclick='number(3)'>3</button>
+        <button id = 'four' onclick='number(4)'>4</button>
+        <button id = 'five' onclick='number(5)'>5</button>
+        <button id = 'six' onclick='number(6)'>6</button>
+        <button id = 'seven' onclick='number(7)'>7</button>
+        <button id = 'eight' onclick='number(8)'>8</button>
+        <button id = 'nine' onclick='number(9)'>9</button>
+        
+        <button id = 'add' onclick = 'operator("plus"); blink("add")'>+</button>
+        <button id = 'divide' onclick = 'operator("divide"); blink("divide")'>/</button>
+        <button id = 'subtract' onclick = 'operator("subtract"); blink("subtract")'>-</dibutton>
+        <button id = 'equals' onclick = 'operator("equals"); blink("equals")'>=</button>
+        <button id = 'multiply' onclick = 'operator("multiply"); blink("multiply")'>*</button>
+    </div>
+    <script src = 'index.js'></script>
+</body>
+</html>

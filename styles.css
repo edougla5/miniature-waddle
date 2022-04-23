@@ -1,0 +1,185 @@
+
+#projectButton {
+    background-color: white;
+    border: none;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    padding: 15px 32px;
+    display: block;
+    cursor: pointer;
+    width: 300px;
+    font-size: 16px;
+    margin: 0 auto;
+    margin-top: 10px;
+    transition: 0.3s;
+}
+
+.profileImg {
+  object-fit: cover;
+  border: solid black;
+  border-radius: 30%;
+  border-width: thin;
+}
+
+#projectButton:hover {
+    cursor: pointer;
+    background-color: orangeRed;
+}
+
+li {
+  list-style: none;
+}
+
+.phone {
+  margin: 40px 0 10px -100px;
+  user-select: none;
+}
+
+.email {
+  margin-right: 0px;
+  margin-left: -100px;
+}
+
+  #bookSearch {
+    text-decoration: none;
+}
+
+#contact {
+  float: none;
+}
+
+.material-icons {
+  margin: 0  40px 0 40px;
+  vertical-align: middle;
+}
+
+#icon {
+  list-style: none;
+  margin: 0 40px 0 40px;
+  vertical-align: middle;
+}
+
+#linkedIcon {
+  list-style: none;
+  margin: 0 auto;
+  vertical-align: middle;
+}
+
+#linkedin {
+  position: fixed;
+  bottom: 10px;
+  right: -40px;
+}
+
+#contact{
+  margin-right: 15%;
+  float: right;
+  text-align: left;
+}
+
+@media (max-width: 800px) {
+  #linkedin {
+    position: relative;
+  }
+  #buttonsContainer {
+    display: block;
+    margin: 0 auto;
+  }
+  #contact {
+    margin: 0 auto;
+  }
+
+  .header {
+    text-align: center;
+  }
+
+  #container {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+
+.nav-icons {
+  display: block;
+  text-align: center;
+  margin: 100px 0 40px 0;
+}
+  
+  #calendar {
+      text-decoration: none;
+  }
+  
+  #mdnBallsButton {
+    text-decoration: none;
+  }
+  
+  #myOtherButton {
+    text-decoration: none;
+  }
+  
+  #clockAppButton {
+    text-decoration: none;
+  }
+  
+  #top {
+    background-color: rgb(3, 194, 105);
+    margin: 0 auto;
+    width: 100%;
+    height: 20px;
+  }
+  
+  #title {
+      margin-left: 5%;
+      color: #000;
+  }
+  
+.github {
+  margin: 10px 0 10px -100px;
+  cursor: pointer;
+}
+
+#githubLink {
+  text-decoration: none;
+  color: orangered;
+}
+
+.linkedin {
+  margin: 10px 0 10px -100px;
+  cursor: pointer;
+}
+
+#linkedinLink {
+  text-decoration: none;
+  color: orangered;
+}
+
+  body {
+    color:white;
+    background-color: #333;
+  }
+  
+  #calculator {
+    text-decoration: none;
+  }
+  
+  #buttonsContainer {
+    float: left;
+    text-align: center;
+    margin-top: 10%;
+  }
+
+  #breakbricks {
+    text-decoration: none;
+  }
+  
+  @keyframes nav {
+      0% {
+          margin-left: -20%;
+      }
+
+      100% {
+          margin-left: 120%;
+      }
+  }

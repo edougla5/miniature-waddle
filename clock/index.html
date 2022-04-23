@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Clock basic</title>
+    <link rel = 'stylesheet' href = 'styles.css'>
+</head>
+<body>
+    <nav id ='navbar'>
+        <ul>
+            <li id = 'atlanta' onclick = 'atlantaTime()'><a>atlanta</a></li>
+            <li id = 'tokyo' onclick = 'hongKongTime()'><a>tokyo</a></li>
+            <li id = 'anchorage' onclick = 'anchorageTime()'><a>anchorage</a></li>
+            <li id = 'hong-kong' onclick = 'hongKongTime()'><a>hong kong</a></li>
+            <li id = 'paris' onclick = 'parisTime()'><a>paris</a></li>
+            <li id = 'sydney' onclick = 'sydneyTime()'><a>sydney</a></li>
+            <li id = 'moscow' onclick = 'moscowTime()'><a>moscow</a></li>
+            <li id = 'mumbai' onclick = 'mumbaiTime()'><a>mumbai</a></li>
+        </ul>
+    </nav>
+
+    <div id='container'>
+        <input id = 'searchBar' type = 'text' placeholder="search..">
+        <button id ='myButton' type = 'button' onclick = 'searchAtl()'>search</button>
+    </div>
+    <button id = 'alarms' onclick = 'newAlarm()'>alarms</button>
+
+    <h3 id='atlLabel'>atlanta</h3>
+    <h3 id ='tokyoLabel'>tokyo</h3>
+    <h3 id='anchorageLabel'>anchorage</h3>
+    <h3 id='hongKongLabel'>hong kong</h3>
+    <h3 id='parisLabel'>paris</h3>
+    <h3 id='sydneyLabel'>sydney</h3>
+    <h3 id='moscowLabel'>moscow</h3>
+    <h3 id='mumbaiLabel'>mumbai</h3>
+
+    <div id = 'clock'>
+        <div id = 'tics'>
+            <div class = 'tic'>
+                <div class = 'ticExtension'></div>
+            </div>
+        </div>
+
+        <div id = 'hourHand'></div>
+        <div id = 'secondHand'></div>
+        <div id = 'minuteHand'></div>
+     </div>
+
+        <div id='timeLabel'>
+            <ul id='tlContainer'>
+                <li id='hours'></li>
+                <li>:</li>
+                <li id='minutes'>minutes</li>
+                <li id = 'am/pm'>am</li>
+            </ul>
+        </div>
+
+        <div id='date'>
+            <h2 id='dayLabel'>Day</h2>
+            <h2 id='monthLabel'>Month</h2>
+        </div>
+        
+    <script src="index.js"></script>
+</body>
+</html>

@@ -1,0 +1,61 @@
+#canvas {
+    display: block;
+    margin: 0 auto;
+}
+
+#gameOver {
+    display: none;
+    top: 10px;
+    position: absolute;
+    color: red;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    top: 45%;
+    justify-content: center;
+    animation: fade-in 10s linear;
+}
+
+#continue {
+    display: none;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: delay 10s linear;
+    cursor: pointer;
+    padding: 15px 25px;
+    background-color: white;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 5px 5px #999;
+}
+
+@keyframes fade-in {
+    0% { opacity: 0; }
+    25% { opacity: 1; }
+    100% { opacity: 1; }
+}
+
+@keyframes text-zoom {
+    0% { font-size: 5em; }
+    25% { font-size: 6em; }
+    50% { font-size: 7em; }
+    75% { font-size: 8em; }
+    100% { font-size: 8em; }
+}
+
+#scoreTitle {
+    color: white;
+    position: absolute;
+    top:-10px;
+    left: 110px;
+    user-select: none;
+}
+
+#score {
+    color: white;
+    top: -9px;
+    position: absolute;
+    left: 195px;
+    user-select: none;
+}
