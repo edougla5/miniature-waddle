@@ -12,6 +12,10 @@ body {
     height: inherit;
 }
 
+title {
+    color: black;
+}
+
 h1 {
     font-size: 2rem;
     letter-spacing: -1px;
@@ -21,4 +25,29 @@ h1 {
     right: 5px;
     color: transparent;
     text-shadow: 0 0 4px white;
+}
+
+.rangeSlider {
+    width: 100%;
+    height: 5px;
+    background: black;
+    outline: none;
+    -webkit-appearance: none;
+}
+
+.slideContainer {
+    position: absolute;
+    left: 2px;
+    bottom: 2%;
+    transform: rotate(0deg);
+}
+
+.rangeSlider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: #04AA6D;
+  cursor: pointer;
 }

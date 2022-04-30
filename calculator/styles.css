@@ -1,218 +1,221 @@
 #title {
-    font-size: 30px;
+  font-size: 30px;
 }
 
 #container {
-    background-color: #333;
-    width: 200px;
-    display: table;
-    height: 300px;
-    margin: 0 auto;
-    margin-top: 5%;
-    padding: 10%;
+  position: absolute;
+  background-color: #333;
+  width: 250px;
+  height: 300px;
+  margin-top: -50px;
+  top: 50%;
+  padding: 10%;
 }
 
 #display {
-    margin: 10px;
-    margin-left: -5px;
-    display: table;
-    background-color: rgb(3, 250, 168);
-    height: 40px;
-    width: 105%;
-    border: solid black;
-    border-width: thin;
-    font-family: 'Qahiri', sans-serif;
-    font-size: 5px;
+  display: table;
+  background-color: rgb(3, 250, 168);
+  height: 40px;
+  width: 210px;
+  border: solid black;
+  border-width: thin;
+  font-family: "Qahiri", sans-serif;
+  font-size: 5px;
+}
+
+#buttonsContainer {
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 #innerText {
-    display: table-cell;
-    vertical-align: middle;
-    padding-left: 5px;
-    font-size: 20px;
+  display: table-cell;
+  vertical-align: middle;
+  padding-left: 5px;
+  font-size: 20px;
 }
 
-
 #ac {
-    height: 50px;
-    width: 50px;
-    background-color: orangered;
-    cursor: pointer;
+  height: 50px;
+  width: 50px;
+  background-color: orangered;
+  cursor: pointer;
 }
 
 #add {
-    float: right;
-    vertical-align: middle;
-    text-align: center;
-    height: 50px;
-    width: 50px;
-    background-color: white;
-    cursor: pointer;
+  vertical-align: middle;
+  text-align: center;
+  height: 50px;
+  width: 50px;
+  background-color: white;
+  cursor: pointer;
 }
 
 #divide {
-    text-align: center;
-    top: 50%;
-    height: 50px;
-    width: 50px;
-    background-color: white;
-    row-gap: 0px;
-    cursor: pointer;
+  text-align: center;
+  top: 50%;
+  height: 50px;
+  width: 50px;
+  background-color: white;
+  row-gap: 0px;
+  cursor: pointer;
 }
 
 #subtract {
-    text-align: center;
-    top: 50%;
-    height: 50px;
-    width: 50px;
-    background-color: white;
-    row-gap: 0px;
-    cursor: pointer;
+  text-align: center;
+  top: 50%;
+  height: 50px;
+  width: 50px;
+  background-color: white;
+  row-gap: 0px;
+  cursor: pointer;
 }
 
 #multiply {
-    text-align: center;
-    top: 50%;
-    height: 50px;
-    width: 50px;
-    background-color: white;
-    cursor: pointer;
+  text-align: center;
+  top: 50%;
+  height: 50px;
+  width: 50px;
+  background-color: white;
+  cursor: pointer;
 }
 
 #equals {
-    text-align: center;
-    top: 50%;
-    height: 50px;
-    width: 50px;
-    background-color: white;
-    cursor: pointer;
+  text-align: center;
+  top: 50%;
+  height: 50px;
+  width: 100px;
+  background-color: white;
+  cursor: pointer;
 }
 
 #zero {
-    right: 0px;
-    text-align: center;
-    top: 50%;
-    height: 50px;
-    width: 50px;
-    background-color: white;
-    cursor: pointer;
+  right: 0px;
+  text-align: center;
+  top: 50%;
+  height: 50px;
+  width: 50px;
+  background-color: white;
+  cursor: pointer;
 }
 
 #one {
-    right: 0px;
-    text-align: center;
-    top: 50%;
-    height: 50px;
-    width: 50px;
-    background-color: white;
-    cursor: pointer;
+  right: 0px;
+  text-align: center;
+  top: 50%;
+  height: 50px;
+  width: 50px;
+  background-color: white;
+  cursor: pointer;
 }
 
 #two {
-    right: 0px;
-    text-align: center;
-    top: 50%;
-    height: 50px;
-    width: 50px;
-    background-color: white;
-    cursor: pointer;
+  right: 0px;
+  text-align: center;
+  top: 50%;
+  height: 50px;
+  width: 50px;
+  background-color: white;
+  cursor: pointer;
 }
 
 #three {
-    right: 0px;
-    text-align: center;
-    top: 50%;
-    height: 50px;
-    width: 50px;
-    background-color: white;
-    cursor: pointer;
+  right: 0px;
+  text-align: center;
+  top: 50%;
+  height: 50px;
+  width: 50px;
+  background-color: white;
+  cursor: pointer;
 }
 
 #four {
-    right: 0px;
-    text-align: center;
-    top: 50%;
-    height: 50px;
-    width: 50px;
-    background-color: white;
-    cursor: pointer;
+  right: 0px;
+  text-align: center;
+  top: 50%;
+  height: 50px;
+  width: 50px;
+  background-color: white;
+  cursor: pointer;
 }
 
 #five {
-    right: 0px;
-    text-align: center;
-    top: 50%;
-    height: 50px;
-    width: 50px;
-    background-color: white;
-    cursor: pointer;
+  right: 0px;
+  text-align: center;
+  top: 50%;
+  height: 50px;
+  width: 50px;
+  background-color: white;
+  cursor: pointer;
 }
 
 #six {
-    right: 0px;
-    text-align: center;
-    top: 50%;
-    height: 50px;
-    width: 50px;
-    background-color: white;
-    cursor: pointer;
+  right: 0px;
+  text-align: center;
+  top: 50%;
+  height: 50px;
+  width: 50px;
+  background-color: white;
+  cursor: pointer;
 }
 #seven {
-    right: 0px;
-    text-align: center;
-    top: 50%;
-    height: 50px;
-    width: 50px;
-    background-color: white;
-    cursor: pointer;
+  right: 0px;
+  text-align: center;
+  top: 50%;
+  height: 50px;
+  width: 50px;
+  background-color: white;
+  cursor: pointer;
 }
 #eight {
-    right: 0px;
-    text-align: center;
-    top: 50%;
-    height: 50px;
-    width: 50px;
-    background-color: white;
-    cursor: pointer;
+  right: 0px;
+  text-align: center;
+  top: 50%;
+  height: 50px;
+  width: 50px;
+  background-color: white;
+  cursor: pointer;
 }
 #nine {
-    right: 0px;
-    text-align: center;
-    top: 50%;
-    height: 50px;
-    width: 50px;
-    background-color: white;
-    cursor: pointer;
+  right: 0px;
+  text-align: center;
+  top: 50%;
+  height: 50px;
+  width: 50px;
+  background-color: white;
+  cursor: pointer;
 }
 #shape {
-    width: 200px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 50px;
-    border: solid black;
-    border-width: thick;
-    border-radius: 10px;
+  width: 200px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  border: solid black;
+  border-width: thick;
+  border-radius: 10px;
 }
 
 #shape2 {
-    width: 200px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+  width: 200px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 body {
-    background-color: #333;
+  background-color: #333;
 }
 
 button {
-    border: solid black;
-    border-width: thin;
+    margin: 1px;
+  border: solid black;
+  border-width: thin;
 }
 
 @media (max-width: 850px) {
-    #container {
-        margin-top: 25%;
-    }
+  #container {
+    margin-top: 25%;
+  }
 }

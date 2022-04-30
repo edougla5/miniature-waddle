@@ -94,5 +94,4 @@ function number(num) {
     bMinus.style.color = 'black'
     bDiv.style.color = 'black'
     bPlus.style.color = 'black'
-
 }
