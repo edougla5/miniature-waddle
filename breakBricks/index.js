@@ -21,13 +21,16 @@ let realScore = 0
 
 let gBricks = []
 
+numBricks = Math.floor(canvas.width/100) + 1
+
 for(let w=0;w<10;w++) {
-    gBricks[w] = [true,true,true,true,true,true,true,true]
+    gBricks.push([])
+    for(let x=0;x<numBricks;x++) {
+        gBricks[w].push(true)
+    }
 }
 
-document.body.style.backgroundColor = 'black'
-
-numBricks = Math.floor(canvas.width/100) + 1
+console.log(gBricks)
 
 function game() {
     myScore.innerHTML = '0'
@@ -60,6 +63,7 @@ function game() {
                 ctx.fill()
                 ctx.closePath()
             }
+            // brick encounter
             if (d-ballRad<=h+10 && d+ballRad>=h && f>=g && f<=g+60 && gBricks[i][q]) {
                 gBricks[i][q] = false
                 upDown *= -1
@@ -75,9 +79,12 @@ function game() {
     
     f += leftRight
     d += upDown
-    
-    if (f>a && f< a+x && d+ballRad > b) {
+    // canvas rect = (startX, startY, endX, endY)
+    if ((f-30)>a && (f+30)<a+x && (d+ballRad) > b) {
         upDown *= -1
+    }
+    if (f<a+x && (d+ballRad) > b && d<b+y) {
+        leftRight *= -1
     } else if (f+ballRad > canvas.width) {
         leftRight *= -1
     } else if (f-ballRad == 0) {

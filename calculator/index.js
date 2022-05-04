@@ -31,7 +31,7 @@ let reset = true
 let screen = document.getElementById('innerText')
 
 // tracking for number being calculated
-let numTot = 0
+let numTot
 
 function operator(value) {
     if (value == 'ac') {
@@ -40,7 +40,7 @@ function operator(value) {
         numTot = 0
     } else if (value == 'plus' && !minus && !divide && !multiply && !plus) {
         plus=true
-        bPlus.style.backgroundColor = 'black' 
+        bPlus.style.backgroundColor = 'black'
         screen.innerHTML+='+'
     } else if (value == 'divide' && !minus && !multiply && !divide && !plus) {
         divide = true
@@ -61,9 +61,10 @@ function operator(value) {
 }
 
 //if 0, let screen = number
+let currentNum
 function number(num) {
     if(screen.innerHTML == 0 || equals) {
-        numTot = num
+        numTot = num.toString()
         screen.innerHTML = num
         equals = false
     } else {
@@ -80,18 +81,21 @@ function number(num) {
             numTot += num
             plus=false
         } else {
-            numTot = parseInt(num+screen.innerHTML)
+            numTot += num.toString()
     }
     screen.innerHTML+=num
 }
 
-    bMult.style.backgroundColor = 'white'
+bMult.style.backgroundColor = 'white'
     bMinus.style.backgroundColor = 'white'
     bDiv.style.backgroundColor = 'white'
     bPlus.style.backgroundColor = 'white'
-
+    
     bMult.style.color = 'black'
     bMinus.style.color = 'black'
     bDiv.style.color = 'black'
     bPlus.style.color = 'black'
+    numTot = parseInt(numTot)
+    console.log(typeof numTot)
+
 }
