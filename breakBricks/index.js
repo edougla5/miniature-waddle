@@ -104,7 +104,7 @@ function game() {
         }
         realScore = 0
     }
-
+    console.log(d+ballRad)
 },10)
 }
 
