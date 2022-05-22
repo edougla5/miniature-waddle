@@ -52,14 +52,16 @@
     color: white;
     position: absolute;
     top:-10px;
-    left: 110px;
+    left: 10px;
     user-select: none;
+    font-family: 'Macondo', curisve;
 }
 
 #score {
     color: white;
     top: -9px;
     position: absolute;
-    left: 195px;
+    left: 80px;
     user-select: none;
+    font-family: 'Macondo', curisve;
 }

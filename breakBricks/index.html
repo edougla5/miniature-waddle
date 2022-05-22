@@ -3,19 +3,20 @@
 <head>
     <link rel = 'stylesheet' type = 'text/css' href = 'styles.css'>
     <link href="https://fonts.googleapis.com/css2?family=New+Tegomin&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Macondo&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
     <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <script type='text/javascript' src='https://unpkg.com/webcam-easy/dist/webcam-easy.min.js'></script>
 </head>
 <body>
     <h2 id = 'scoreTitle'>score: </h2><h2 id='score'>0</h2>
     <canvas id = 'canvas'></canvas>
-    <h1 id = 'gameOver'>You Died</h1>
-    <button onclick = 'game()' id='continue'>Try Again</button>
-    <audio='snapSound' src='audio/snap.wav' preload='auto'></audio>
+    <h1 id = 'gameOver'>Try Again</h1>
+    <button onclick = 'game()' id='continue'>You Died</button>
     <script src = 'index.js'></script>
 </body>
 </html>
