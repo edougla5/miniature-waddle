@@ -13,6 +13,7 @@ let bDiv = document.getElementById('divide')
 
 let plus = false
 let minus = false
+let percent = false
 let multiply = false
 let divide = false
 let subtract = false
@@ -57,6 +58,9 @@ function operator(value) {
     } else if (value == 'equals') {
         screen.innerHTML = numTot
         equals=true
+    } else if (value == 'percent') {
+        percent=true
+        screen.innerHTML='%'
     }
 }
 
@@ -80,6 +84,9 @@ function number(num) {
         }  else if(plus) {
             numTot += num
             plus=false
+        } else if(percent) {
+            numTot%=num
+            percent=false
         } else {
             numTot += num.toString()
     }

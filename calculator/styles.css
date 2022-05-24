@@ -23,9 +23,9 @@
 }
 
 #buttonsContainer {
-    margin: auto;
-    display: flex;
-    flex-wrap: wrap;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 #innerText {
@@ -43,6 +43,15 @@
 }
 
 #add {
+  vertical-align: middle;
+  text-align: center;
+  height: 50px;
+  width: 50px;
+  background-color: white;
+  cursor: pointer;
+}
+
+#percent {
   vertical-align: middle;
   text-align: center;
   height: 50px;
@@ -94,7 +103,7 @@
   text-align: center;
   top: 50%;
   height: 50px;
-  width: 50px;
+  width: 150px;
   background-color: white;
   cursor: pointer;
 }
@@ -208,7 +217,7 @@ body {
 }
 
 button {
-    margin: 1px;
+  margin: 1px;
   border: solid black;
   border-width: thin;
 }
