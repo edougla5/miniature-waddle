@@ -6,6 +6,8 @@ ctx.canvas.height = window.innerHeight-25
 let died = document.getElementById('gameOver')
 let myButton = document.getElementById('continue')
 let myScore = document.getElementById('score')
+let scoreLabel=document.getElementById('scoreTitle')
+let gameStart = document.getElementById('startButton')
 let dead = false
 let a = canvas.width/2
 let b = canvas.height-100
@@ -24,6 +26,8 @@ let gBricks = []
 document.querySelector('body').style.backgroundColor = 'black'
 
 function game() {
+    myScore.style.display = 'block'
+    scoreLabel.style.display='block'
     numBricks = Math.floor(canvas.width/100)
     let spaceBefore = (canvas.width-numBricks*80-20)/2
     
@@ -38,6 +42,8 @@ function game() {
     let myFunc = setInterval(function() {
     died.style.display = 'none'
     myButton.style.display = 'none'
+    gameStart.style.display = 'none'
+
     ctx.clearRect(0, 0, canvas.width, canvas.height)
     ctx.beginPath()
     ctx.rect(a, b, x, y)
@@ -56,7 +62,6 @@ function game() {
     let h = 50
     let color = 100
 
-    
     for (let i=0;i<6;i++) {
         for(let q=0;q<numBricks;q++) {
             if(gBricks[i][q]) {
@@ -136,8 +141,6 @@ function game() {
     }
 },10)
 }
-
-game()
 
 let dragEnd
 let dragStart
