@@ -15,7 +15,7 @@ body {
     position: absolute;
     top: 55%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50px, -50px);
     animation: delay 10s linear;
     cursor: pointer;
     padding: 15px 25px;
@@ -23,6 +23,16 @@ body {
     border: none;
     border-radius: 15px;
     box-shadow: 5px 5px #999;
+}
+
+#startButton:hover {
+    background-color: orangeRed;
+}
+
+#startButton:active {
+    transform: translate(-45px, -45px);
+    transition: all .2s;
+    box-shadow: none;
 }
 
 #canvas {

@@ -25,10 +25,46 @@ let gBricks = []
 
 document.querySelector('body').style.backgroundColor = 'black'
 
+function startScreen() {
+    numBricks = Math.floor(canvas.width/100)
+    let spaceBefore = (canvas.width-numBricks*80-20)/2
+    myScore.style.display = 'block'
+    scoreLabel.style.display='block'
+    for(let w=0;w<10;w++) {
+        gBricks.push([])
+        for(let v=0;v<numBricks;v++) {
+            gBricks[w].push(true)
+        }
+    }
+    let g = spaceBefore
+    let h = 50
+    let color = 100
+    
+    for (let i=0;i<6;i++) {
+    for(let q=0;q<numBricks;q++) {
+        if(gBricks[i][q]) {
+            ctx.beginPath()
+            ctx.rect(g, h, 60, 10)
+            ctx.fillStyle = 'rgb(' + color + ',50,0)'
+            ctx.fill()
+            ctx.closePath()
+        }
+        g+=80
+        }
+        // g(starting horizontal of box) h(starting vertical of each box)
+        h+=40
+        g=spaceBefore
+        color +=50
+    }
+}
+
+startScreen()
+
 function game() {
     myScore.style.display = 'block'
     scoreLabel.style.display='block'
     numBricks = Math.floor(canvas.width/100)
+
     let spaceBefore = (canvas.width-numBricks*80-20)/2
     
     for(let w=0;w<10;w++) {
@@ -58,7 +94,7 @@ function game() {
     ctx.fill()
     ctx.closePath()
 
-    let g = spaceBefore
+        let g = spaceBefore
     let h = 50
     let color = 100
 
@@ -105,9 +141,8 @@ function game() {
         g=spaceBefore
         color +=50
     }
-
     
-    f -= leftRight
+    f += leftRight
     d -= upDown
     // canvas rect = (startX, startY, endX, endY)
     // if (f+ballRad>a && f-ballRad<a+x && (d+ballRad) > b) {

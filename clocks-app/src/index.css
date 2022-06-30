@@ -1,0 +1,91 @@
+body {
+  background-color: #333;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  monospace;
+}
+
+#title {
+  display: block;
+  color: orangered;
+  margin-left: 50px;
+  margin: 0 auto;
+  animation: text-move 5s;
+}
+
+#myClock {
+  display: block;
+}
+
+#myInput {
+  display: block;
+  margin: 0 auto;
+}
+
+#myButton {
+  display: block;
+  width: 100px;
+}
+
+#myButton:hover {
+  cursor: pointer;
+}
+
+#email {
+  margin: 20px auto 0 auto;
+  display: block;
+}
+
+#phone {
+  margin: 0 auto;
+  display: block;
+}
+
+#myInput:focus {
+  outline: none;
+}
+
+#dLabel {
+  display: flex;
+  bottom: 0px;
+}
+
+#displayText {
+  margin-top: 2%;
+  text-align: center;
+}
+
+#testText {
+  border: solid black;
+  position: absolute;
+}
+
+@keyframes text-move {
+  0% {
+    margin-left: -70px;
+  }
+  
+  100% {
+    margin-left: 100%;
+  }
+}
+
+#box {
+  display: block;
+  margin: 0 auto;
+  /* animation: text-move 5s infinite linear; */
+  height: 338px;
+  width: 380px;
+  background-color: white;
+  border-radius: 10px;
+  border: solid black;
+}
+
+#inputContainer {
+  margin-top: 20px;
+  display: block;
+  text-align: center;
+}
+
