@@ -1,39 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <script src="https://kit.fontawesome.com/998ade3526.js" crossorigin="anonymous"></script>
-    <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
-<link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <script
+      src="https://kit.fontawesome.com/998ade3526.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css"
+      rel="stylesheet"
+    />
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
     <div id="sidePanel">
-        <div id="line"></div>
-        <ul>
-            <li id="label"><i class="fa-solid icon-home"></i><a id="labelText">Home</a></li>
-            <li id="label"><i class="fa-solid icon-info-sign"></i><a id="labelText">About</a></li>
-            <li id="label"><i class="fa-solid icon-phone"></i><a id="labelText">Contact</a></li>
-        </ul>
+      <div id="line"></div>
+      <ul>
+        <li id="label">
+          <i class="fa-solid icon-home"></i><a id="labelText">Home</a>
+        </li>
+        <li id="label">
+          <i class="fa-solid icon-info-sign"></i
+          ><a id="labelText">My Account</a>
+        </li>
+        <li id="label">
+          <i class="fa-solid icon-phone"></i><a id="labelText">Other</a>
+        </li>
+      </ul>
     </div>
-    <img id='leafLogo' src="/pics/abstractLeaf.png">
-    <h3 id="title">Sign Up</h3>
-    <div id="inputContainer">
-        <div id="inputBox">
-        <div id="boxLabel">name:
-        <input id='box' type="textbox" required>
+    <a href="index.html"><img id="leafLogo" src="/pics/abstractLeaf.png" /></a>
+    <div id="inputBox">
+      <form id="inputContainer">
+        <h3 id="title">User Login</h3>
+        <div id="boxLabel">
+          name:
+          <input id="box" type="textbox" required />
         </div>
-        <div id="box2Label">email:
-            <input id='box2' type="textbox" required>
+        <div id="box2Label">
+          email:
+          <input id="box2" type="textbox" required />
         </div>
-        <div id="box3Label">phone:
-            <input id='box3' type="textbox" required>
+        <div id="box3Label">
+          phone:
+          <input id="box3" type="textbox" required />
         </div>
-        <button id='formSubmit' type="submit">Submit</button>
-        </div>
+        <button id="formSubmit" onclick="myFunc()" type="submit">Submit</button>
+        <h3 id="loginLabel">Logged In As:</h3>
+      </form>
     </div>
-</body>
+    <script src="index.js"></script>
+  </body>
 </html>

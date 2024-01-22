@@ -1,30 +1,39 @@
-
-
 #leafLogo {
-    float: right;
-    margin-right: 50px;
+    position: absolute;
+    right: 10px;
+    top: 10px;
     width: 100px;
     cursor: pointer;
 }
 
 #formSubmit {
-    color: white;
-    background-color: #04aa6d;
+    color: black;
+    display: block;
+    margin: 0 auto;
+    width: 160px;
+    background-color: #09f981;
     border-radius: 5px;
     font-size: 17px;
     padding: 6px 18px;
     border: none;
     cursor: pointer;
+    user-select: none;
+}
+
+body {
+    background-color: rgb(211, 211, 211) !important;
 }
 
 #inputBox {
-    background-color: #888;
+    background-color: #333;
+    color: white;
     border: solid black;
     border-width: thin;
-    border-radius: 10px;
+    border-radius: 100px;
     width: 800px;
-    height: 1000px;
-    text-align: center;
+    height: 500px;
+    margin: 0 auto;
+    margin-top: 10%;
 }
 
 #line {
@@ -37,14 +46,14 @@
 
 #sidePanel {
     display: block;
-    color: white;
+    /* color: white; */
     overflow: hidden;
     position: absolute;
     font-size: large;
     left: 0px;
     top: 0px;
     width: 40px;
-    height: 1000px;
+    height: 100%;
     transition: width 1s;
     background-color: black;
 }
@@ -61,33 +70,34 @@
 }
 
 #sidePanel:hover {
-    width: 100px;
+    width: 150px;
     /* -webkit-transition: font-size .5s; */
     /* font-size: xx-large; */
 }
 
 #inputContainer {
+    color: white;
     margin: 0 auto;
     width: 50%;
     height: 800px;
     align-items: center;
-    border-width: thin;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
 }
 
 #label {
+    color: #999;
     cursor: pointer;
-    margin: 25px 0 25px -13px;
-    color: white;
+    margin: 25px 0 0 -13px;
     list-style: none;
     display: flex;
 }
 
 #labelText {
+    color: green;
     font-size: medium;
-    margin-left: 10px;
+    margin-left: 35px;
 }
 
 #label1 {
@@ -97,24 +107,38 @@
 }
 
 #title {
+    user-select: none;
     text-align: center;
+    color: white;
+}
+
+#boxLabel {
+    user-select: none;
+}
+
+#box2Label {
+    user-select: none;
+}
+
+#box3Label {
+    user-select: none;
 }
 
 #box {
     text-indent: 5px;
-    margin-top: 5px;
     border-radius: 8px;
     width: 100px;
     outline: none;
+    margin-left: 5px;
 }
 
 #box2 {
     text-indent: 5px;
-    line-height: normal;
     margin-top: 5px;
     border-radius: 8px;
     width: 100px;
     outline: none;
+    margin-left: 5px;
 }
 
 #box3 {
@@ -126,6 +150,6 @@
     outline: none;
 }
 
-/* placeholder {
-    margin-left: 10px;
-} */
+#loginLabel {
+    display: none;
+}
