@@ -110,7 +110,7 @@ li {
   margin-right: 10%;
 }
 
-.mongoLogo {
+#mongoLogo {
   width: 200px;
   position: absolute;
   bottom: 10px;
